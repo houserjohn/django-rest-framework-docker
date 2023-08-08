@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'sources',
 ]
 
 MIDDLEWARE = [
@@ -136,5 +137,7 @@ STATIC_ROOT = 'static/'
 # allow all from localhost:<number>
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
+    r"^http://172.21.11.65:\d+$",
+
     
 ]
